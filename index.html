@@ -54,7 +54,12 @@
             "The best frontend reviews end with something you can open, test,
             and show."
           </blockquote>
-          <p>Continue exploring standards and examples at <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN Web Docs</a>.</p>
+          <p>
+            Continue exploring standards and examples at
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+              >MDN Web Docs</a
+            >.
+          </p>
         </div>
       </section>
       <section id="schedule" class="panel">
@@ -62,11 +67,88 @@
           <p class="eyebrow">Festival schedule</p>
           <h2>Pick your learning track</h2>
         </div>
+        <table class="schedule-table" style="min-width: 760px">
+          <caption>
+            PixelWave session timetable
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Time</th>
+              <th scope="col">Session</th>
+              <th scope="col">Format</th>
+              <th scope="col">Room</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><time datetime="10:00">10:00</time></td>
+              <td>Semantic HTML that explains itself</td>
+              <td>Workshop</td>
+              <td>Markup Hall</td>
+            </tr>
+            <tr>
+              <td><time datetime="11:30">11:30</time></td>
+              <td>Responsive CSS without layout panic</td>
+              <td>Live build</td>
+              <td>Style Stage</td>
+            </tr>
+            <tr>
+              <td><time datetime="13:30">13:30</time></td>
+              <td>Forms people can finish</td>
+              <td>Review</td>
+              <td>Input Lab</td>
+            </tr>
+            <tr>
+              <td><time datetime="15:00">15:00</time></td>
+              <td>Accessible media and motion</td>
+              <td>Demo</td>
+              <td>Media Deck</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
       <section id="media" class="panel">
         <div class="section-heading">
           <p class="eyebrow">Media stage</p>
           <h2>Test native browser playback</h2>
+        </div>
+        <div class="media-grid">
+          <article class="media-card">
+            <h3>Audio sound check</h3>
+            <audio controls preload="metadata">
+              <source
+                src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+                type="audio/mpeg"
+              />
+              <a
+                href="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+                >Download the audio sample</a
+              >
+            </audio>
+            <p>Transcript: A short demonstration sound plays</p>
+          </article>
+          <article class="media-card">
+            <h3>Video stage preview</h3>
+            <video controls width="320" height="240" preload="metadata">
+              <source
+                src="https://mdn.github.io/learning-area/html/multimedia-and-embedding/video-and-audio-content/rabbit320.mp4"
+                type="video/mp4"
+              />
+              <source
+                src="https://mdn.github.io/learning-area/html/multimedia-and-embedding/video-and-audio-content/rabbit320.ogg"
+                type="video/ogg"
+              />
+              <track
+                src="subtitles.vtt"
+                kind="subtitles"
+                srclang="en"
+                label="English"
+              />
+              <a href="https://mdn.github.io/learning-area/html/multimedia-and-embedding/video-and-audio-content/rabbit320.mp4"
+                >Download the MP4 video</a
+              >
+            </video>
+          </article>
         </div>
       </section>
       <section id="rsvp" class="panel">
