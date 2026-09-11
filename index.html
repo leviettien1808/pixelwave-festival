@@ -146,7 +146,8 @@
                 srclang="en"
                 label="English"
               />
-              <a href="https://mdn.github.io/learning-area/html/multimedia-and-embedding/video-and-audio-content/rabbit320.mp4"
+              <a
+                href="https://mdn.github.io/learning-area/html/multimedia-and-embedding/video-and-audio-content/rabbit320.mp4"
                 >Download the MP4 video</a
               >
             </video>
@@ -158,6 +159,30 @@
           <p class="eyebrow">RSVP practice</p>
           <h2>Test an accessible form</h2>
         </div>
+        <form action="#registration-note" method="get">
+          <div class="form-field">
+            <label for="guest-name">Full name (required)</label>
+            <input type="text" id="guest-name" name="guest-name" required />
+          </div>
+          <div class="form-field">
+            <label for="guest-email">Email (required)</label>
+            <input type="email" id="guest-email" name="guest-email" required />
+          </div>
+          <div class="form-field">
+            <label for="session">Most interesting session</label>
+            <select id="session" name="session">
+              <option value="semantic-html">Semantic HTML</option>
+              <option value="responsive-css">Responsive CSS</option>
+              <option value="accessible-forms">Accessible forms</option>
+              <option value="media-motion">Media and motion</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="message">Message (optional)</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit">Test my RSVP</button>
+        </form>
       </section>
     </main>
     <footer>
